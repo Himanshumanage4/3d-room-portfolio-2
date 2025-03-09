@@ -1,0 +1,29 @@
+.logo {
+  position: fixed;
+  top: 5%;
+  left: 66px;
+  z-index: 40;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent; // Transparent background
+  border: none;                  // No border
+  padding: 0;                    // Adjust padding if needed
+
+  img {
+    width: 100px;  // Adjust as necessary
+    height: auto;
+  }
+
+  &.light {
+    // If you need to override for light mode, adjust accordingly:
+    background-color: transparent;
+    border: none;
+  }
+
+  @media (max-width: 768px) {
+    left: 32px;
+    top: 32px;
+  }
+}
